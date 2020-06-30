@@ -4,11 +4,10 @@ import MarketControl from "./MarketControl";
 
 function App(){
   return (
-    <React.Fragment>
+    <>
       <Header />
-      
       <MarketControl />
-    </React.Fragment>
+    </>
   );
 }
 

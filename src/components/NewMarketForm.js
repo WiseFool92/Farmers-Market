@@ -9,19 +9,19 @@ function NewMarketForm(props) {
         <input 
           type='text'
           names='names'
-          placeholder='Market Name' />
+          placeholder='Market Name' /><br/>
         <input
           type='text'
           name='location'
-          placeholder='Location' />
+          placeholder='Location' /><br/>
         <input
           type='text'
           name='season'
-          placeholder='season' />
+          placeholder='season' /><br/>
         <textarea
           name='describe'
           placeholder='Describe your market.' /><br/>
-        <button type='submit'></button>
+        <button type='submit'>Submit</button>
       </form>
     </>
   );
