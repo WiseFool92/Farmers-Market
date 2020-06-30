@@ -12,7 +12,7 @@ class MarketControl extends React.Component {
     };
     // this.handleClick = this.handleClick.bind(this); // Only needed for binding if an arrow function isnt used
   }
-  handleAddingNewMarketTList = (newMarket) => {
+  handleAddingNewMarketToList = (newMarket) => {
     const newMasterMarketList = this.state.masterMarketList.concat(newMarket);
     this.setState({
       masterMarketList: newMasterMarketList,
@@ -28,7 +28,7 @@ class MarketControl extends React.Component {
     let currentlyVisibleState = null;
     let buttonText = null;
     if (this.state.formVisbleOnPage) {
-      currentlyVisibleState = <NewMarketForm onNewMarketCreation={this.handleAddingNewmarketToList} />;
+      currentlyVisibleState = <NewMarketForm onNewMarketCreation={this.handleAddingNewMarketToList} />;
       buttonText = "Return to Market List";
     } else {
       currentlyVisibleState = <MarketList marketList={this.state.masterMarketList} />;

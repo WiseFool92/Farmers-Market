@@ -25,12 +25,12 @@ function NewMarketForm(props) {
 
   function handleNewMarketFormSubmission(event) {
     event.preventDefault();
-    props.onNewTicketCreation({names: event.target.names.value, location: event.target.location.value, issue: event.target.issue.value, id: v4()});
+    props.onNewMarketCreation({names: event.target.names.value, location: event.target.location.value, issue: event.target.issue.value, id: v4()});
   }
 }
 
 NewMarketForm.propTypes = {
-  onNewTicketCreation: PropTypes.func
+  onNewMarketCreation: PropTypes.func
 };
 
 export default NewMarketForm;
