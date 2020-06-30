@@ -9,7 +9,8 @@ function MarketList(props) {
     {props.marketList.map((market, index) => 
       <Market names = {market.name}
       location = {market.location}
-      issue = {market.describe}
+      season = {market.season}
+      describe = {market.describe}
       key = {index} />
       )}
     </>

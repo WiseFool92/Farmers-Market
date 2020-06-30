@@ -14,6 +14,10 @@ function NewMarketForm(props) {
           type='text'
           name='location'
           placeholder='Location' />
+        <input
+          type='text'
+          name='season'
+          placeholder='season' />
         <textarea
           name='describe'
           placeholder='Describe your market.' />
@@ -25,7 +29,7 @@ function NewMarketForm(props) {
 
   function handleNewMarketFormSubmission(event) {
     event.preventDefault();
-    props.onNewMarketCreation({names: event.target.names.value, location: event.target.location.value, describe: event.target.describe.value, id: v4()});
+    props.onNewMarketCreation({names: event.target.names.value, location: event.target.location.value, season: event.target.season.value, describe: event.target.describe.value, id: v4()});
   }
 }
 
