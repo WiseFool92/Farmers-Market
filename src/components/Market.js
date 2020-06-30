@@ -5,7 +5,7 @@ function Market(props) {
   return (
     <>
       <h3>{props.location} - {props.names}</h3>
-      <p><em>{props.issue}</em></p>
+      <p><em>{props.describe}</em></p>
     </>
   );
 }
@@ -13,6 +13,6 @@ function Market(props) {
 Market.propTypes = {
   names: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  issue: PropTypes.string
+  describe: PropTypes.string
 };
 export default Market;

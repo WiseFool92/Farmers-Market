@@ -9,15 +9,15 @@ function NewMarketForm(props) {
         <input 
           type='text'
           names='names'
-          placeholder='Pair Names' />
+          placeholder='Market Name' />
         <input
           type='text'
           name='location'
           placeholder='Location' />
         <textarea
-          name='issue'
-          placeholder='Describe your issue.' />
-        <button type='submit'>Help!</button>
+          name='describe'
+          placeholder='Describe your market.' />
+        <button type='submit'></button>
       </form>
 
     </>
@@ -25,7 +25,7 @@ function NewMarketForm(props) {
 
   function handleNewMarketFormSubmission(event) {
     event.preventDefault();
-    props.onNewMarketCreation({names: event.target.names.value, location: event.target.location.value, issue: event.target.issue.value, id: v4()});
+    props.onNewMarketCreation({names: event.target.names.value, location: event.target.location.value, describe: event.target.describe.value, id: v4()});
   }
 }
 
