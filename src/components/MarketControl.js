@@ -20,14 +20,17 @@ class MarketControl extends React.Component {
     });
   }
   handleClick = () => {
+    console.log("Inside handleClick");
     this.setState(prevState => ({
       formVisibleOnPage: !prevState.formVisibleOnPage
     }));
   }
   render(){
+    console.log(this.state.formVisibleOnPage);
     let currentlyVisibleState = null;
     let buttonText = null;
-    if (this.state.formVisbleOnPage) {
+    if (this.state.formVisibleOnPage) {
+      console.log("setting display to NewMarketForm")
       currentlyVisibleState = <NewMarketForm onNewMarketCreation={this.handleAddingNewMarketToList} />;
       buttonText = "Return to Market List";
     } else {

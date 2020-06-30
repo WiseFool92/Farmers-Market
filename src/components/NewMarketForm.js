@@ -20,10 +20,9 @@ function NewMarketForm(props) {
           placeholder='season' />
         <textarea
           name='describe'
-          placeholder='Describe your market.' />
+          placeholder='Describe your market.' /><br/>
         <button type='submit'></button>
       </form>
-
     </>
   );
 

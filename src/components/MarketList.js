@@ -6,6 +6,7 @@ function MarketList(props) {
   return (
     <>
     <hr/>
+    <h2>MarketList</h2>
     {props.marketList.map((market, index) => 
       <Market names = {market.name}
       location = {market.location}
