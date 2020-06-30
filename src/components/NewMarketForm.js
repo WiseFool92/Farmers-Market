@@ -28,9 +28,13 @@ function NewMarketForm(props) {
 
   function handleNewMarketFormSubmission(event) {
     event.preventDefault();
+    // console.log(event.target.names.value);
+    // console.log(event.target.location.value);
+    // console.log(event.target.season.value);
+    // console.log(event.target.describe.value);
     props.onNewMarketCreation({names: event.target.names.value, location: event.target.location.value, season: event.target.season.value, describe: event.target.describe.value, id: v4()});
   }
-}
+};
 
 NewMarketForm.propTypes = {
   onNewMarketCreation: PropTypes.func
